@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-  </style>
-</head>
-<body>
-<h1>Test 01</h1>
-<p>Second Commit</p>
-<footer>
-</footer>
-</body>
+  <head>
+    <title>Rosa Rangel - Yoga y Movimiento Somático</title>
+    <style>
+      header {
+        margin: 10px;
+      }
+      h1 {
+        text-align: center;
+      }
+      p {
+        padding: 100px;
+        text-align: center;
+      }
+      ul {
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        background: rgba(0,0,0,0.6);
+      }
+      li {
+        font-size: 20px;
+        display: inline-table;
+        text-align: center;
+        padding: 0 20px 0 20px;
+        font-family: 'Times New Roman', serif;
+       }
+       a {
+         text-decoration: none;
+         color: white;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+       }
+       a:hover {
+         text-decoration: none;
+         color: darkred;
+       }
+       .sticky {
+        position: fixed;
+        top: 10px;
+        width: 99%;
+      }
+      #myScroll {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+    </header>
+    <div class="scroll" id="myScroll">
+      <ul>
+        <li><a href="#header" target="_self">Inicio</a></li>
+        <li><a href="rosarangel.html" target="_self">Rosa Rangel</a></li>
+        <li><a href="sesiones.html" target="_self">Sesiones</a></li>
+        <li><a href="blog.html" target="_self">Blog</a></li>
+        <li><a href="contacto.html" target="_self">Contacto</a></li>
+      </ul>
+    </div>
+    <h1>Test 01</h1>
+    <p>The navbar will stick to the top when you reach its scroll position.</p>
+    <footer>
+    </footer>
+  </body>
+  <script>
+    window.onscroll = function() {myFunction()};
+    var header = document.getElementById("myScroll");
+    var sticky = header.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
 </html>
