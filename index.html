@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <title>Rosa Rangel - Yoga y Movimiento Somático</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
       header {
         margin-top:  -25px;
         margin-bottom: -25px;
@@ -40,6 +48,11 @@
         padding: 0 20px 0 20px;
         font-family: 'Times New Roman';
        }
+       footer {
+         background: rgba(0,0,0,0.5);
+         padding: 20px;
+        text-align: center;
+       }
        a {
          text-decoration: none;
          color: white;
@@ -54,20 +67,32 @@
        .sticky {
         position: fixed;
         top: 10px;
-        width: 98.65%;
+        width: 100%;
       }
       .column {
-        float: center;
+        float: left;
         width: 33.33%;
         padding: 5px;
       }
-      .row {
-        display: flex;
+      .column .image_content {
+        position: relative;
+        margin-top: -80px; 
+        text-align: center;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 5px;
       }
       .row::after {
         content: "";
         clear: both;
-        display: inline-table;
+        display: flex;
+      }
+      @media screen and (max-width: 1000px) {
+        .column {
+          width: 50%;
+        }
       }
       @media screen and (max-width: 500px) {
         .column {
@@ -82,7 +107,7 @@
   <body>
     <div class="scroll" id="myScroll">
       <ul>
-        <li><a href="#header" target="_self">Inicio</a></li>
+        <li><a href="#" target="_self">Inicio</a></li>
         <li><a href="rosarangel.html" target="_self">Rosa Rangel</a></li>
         <li><a href="sesiones.html" target="_self">Sesiones</a></li>
         <li><a href="blog.html" target="_self">Blog</a></li>
@@ -95,16 +120,26 @@
     <div class="row">
       <div class="column">
         <img src="Images/placeholder.png" alt="Sesión personalizada de yoga restaurativa" style="width:100%">
+        <div class="image_content">
+          <h2>Heading</h2>
+        </div>
       </div>
       <div class="column">
         <img src="Images/placeholder.png" alt="Sesión restaurativa en grupo" style="width:100%">
+        <div class="image_content">
+          <h2>Heading</h2>
+        </div>
       </div>
       <div class="column">
         <img src="Images/placeholder.png" alt="Taller de respiración" style="width:100%">
+        <div class="image_content">
+          <h2>Heading</h2>
+        </div>
       </div>
     </div>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <footer>
+
     </footer>
   </body>
   <script>
