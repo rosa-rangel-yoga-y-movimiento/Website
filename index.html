@@ -4,79 +4,77 @@
     <title>Rosa Rangel - Yoga y Movimiento Somático</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
     <style>
       * {
         box-sizing: border-box;
       }
       body {
         margin: 0;
+        background-color: #ffffff;
       }
       header {
-        margin-top:  -25px;
-        margin-bottom: -25px;
-        padding: 0;
+        margin: 0;
         position: static;
-        top: 0;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-image: url("Images/placeholder.png");
       }
-      h1 {
+       h1 {
+        margin: 0;
         color: white;
         text-shadow: 2px 2px black;
-        font-size: 50px;
-        font-family: 'Lobster', cursive;
+        font-size: 64px;
+        font-family: 'Tangerine', cursive;
         padding: 250px 0 100px 0;
         text-align: center;
       }
-      p {
-        padding: 100px;
-        text-align: center;
-      }
-      ul {
+      .navbar {
+        top: 0;
+        position: fixed;
+        width: 100%;
         margin: 0;
-        padding: 10px;
         text-align: center;
-        background: rgba(0,0,0,0.8);
+        background: #333;
       }
-      li {
-        font-size: 25px;
-        display: inline-table;
+      .navbar a {
+        font-size: 17px;
+        float: left;
+        display: block;
         text-align: center;
-        padding: 0 20px 0 20px;
-        font-family: 'Times New Roman';
+        padding: 10px 20px;
+        font-family: 'Times New Roman', cursive;
+        text-decoration: none;
+        color: white;
        }
-       footer {
-         background: rgba(0,0,0,0.5);
-         padding: 20px;
-        text-align: center;
+       .navbar a.right {
+         float: right;
        }
-       a {
+       .navbar a:hover {
          text-decoration: none;
-         color: white;
-         text-align: center;
-         text-decoration: none;
-         display: inline-block;
-       }
-       a:hover {
-         text-decoration: none;
+         background-color: #ddd;
          color: darkred;
        }
-       .sticky {
-        position: fixed;
-        top: 10px;
-        width: 100%;
-      }
+       .line1 {
+         border: 1px solid darkred;
+       }
+       footer {
+         background: #820000;
+         padding: 20px;
+        text-align: center;
+        color: white;
+       }
       .column {
         float: left;
         width: 33.33%;
         padding: 5px;
       }
-      .column .image_content {
+      .image_content {
+        margin-top: -65px;
         position: relative;
-        margin-top: -80px; 
         text-align: center;
         background: rgb(0, 0, 0);
         background: rgba(0, 0, 0, 0.5);
@@ -94,7 +92,7 @@
           width: 50%;
         }
       }
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 600px) {
         .column {
           width: 100%;
         }
@@ -105,14 +103,15 @@
     </style>
   </head>
   <body>
-    <div class="scroll" id="myScroll">
-      <ul>
-        <li><a href="#" target="_self">Inicio</a></li>
-        <li><a href="rosarangel.html" target="_self">Rosa Rangel</a></li>
-        <li><a href="sesiones.html" target="_self">Sesiones</a></li>
-        <li><a href="blog.html" target="_self">Blog</a></li>
-        <li><a href="contacto.html" target="_self">Contacto</a></li>
-      </ul>
+    <div class="navbar" id="myScroll">
+      <a href="#header" target="_self">Inicio</a>
+      <a href="#" target="_self">Rosa R.</a>
+      <a href="#" target="_self">Sesiones</a>
+      <a href="#" target="_self">Blog</a>
+      <a href="#" target="_self">Contacto</a>
+      <a href="https://www.facebook.com/Rosa-Rangel-Yoga-y-Movimiento-Som%C3%A1tico-1544917479097997/" target="_blank" class="right"><i class="fa fa-fw fa-facebook-square"></i></a>
+      <a href="#" target="_blank" class="right"><i class="fa fa-fw fa-instagram"></i></a>
+      <a href="" target="_blank" class="right"><i class="fa fa-fw fa-youtube-play"></i></a>
     </div>
     <header>
       <h1>Relajar - Respirar - Restaurar</h1>
@@ -121,25 +120,27 @@
       <div class="column">
         <img src="Images/placeholder.png" alt="Sesión personalizada de yoga restaurativa" style="width:100%">
         <div class="image_content">
-          <h2>Heading</h2>
+          <p>Sesión personalizada de yoga restaurativa</p>
         </div>
       </div>
       <div class="column">
         <img src="Images/placeholder.png" alt="Sesión restaurativa en grupo" style="width:100%">
         <div class="image_content">
-          <h2>Heading</h2>
+          <p>Sesión restaurativa en grupo</p>
         </div>
       </div>
       <div class="column">
         <img src="Images/placeholder.png" alt="Taller de respiración" style="width:100%">
         <div class="image_content">
-          <h2>Heading</h2>
+          <p>Taller de respiración</p>
         </div>
       </div>
     </div>
+    <hr class="line1">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <hr class="line1">
     <footer>
-
+      <p>Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
     </footer>
   </body>
   <script>
@@ -148,9 +149,9 @@
     var sticky = header.offsetTop;
     function myFunction() {
       if (window.pageYOffset >= sticky) {
-        header.classList.add("sticky");
+        header.classList.add("navbar");
       } else {
-        header.classList.remove("sticky");
+        header.classList.remove("navbar");
       }
     }
   </script>
