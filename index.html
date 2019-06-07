@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Tangerine&display=swap" rel="stylesheet">
     <style>
       * {
         box-sizing: border-box;
@@ -18,12 +17,20 @@
         background-color: #ffffff;
       }
       header {
+        text-align: center;
+        overflow: auto;
+        max-height: 600px;
+        height: 600px;
         margin: 0;
-        position: static;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-image: url("Images/placeholder.png");
+        background-image: url("Images/flor-lavanda.jpg");
+      }
+      .header_logo {
+        text-align: center;
+        margin-top: 100px;
+        box-shadow: 2px 2px 2px white;
       }
        h1 {
         margin: 0;
@@ -31,10 +38,11 @@
         text-shadow: 2px 2px black;
         font-size: 64px;
         font-family: 'Tangerine', cursive;
-        padding: 250px 0 100px 0;
+        padding: 100px 0 0 0;
         text-align: center;
       }
       .navbar {
+        z-index: 1;
         top: 0;
         position: fixed;
         width: 100%;
@@ -48,7 +56,7 @@
         display: block;
         text-align: center;
         padding: 10px 20px;
-        font-family: 'Times New Roman', cursive;
+        font-family: 'Times New Roman';
         text-decoration: none;
         color: white;
        }
@@ -76,9 +84,7 @@
       }
       .image_content {
         margin-top: -65px;
-        position: relative;
         text-align: center;
-        background: rgb(0, 0, 0);
         background: rgba(0, 0, 0, 0.5);
         color: #f1f1f1;
         width: 100%;
@@ -105,6 +111,7 @@
       .logo {
         top: 50%;
         transform: translate(0, -50%);
+        z-index: -1;
       }
       .head::after {
         content: "";
@@ -112,19 +119,49 @@
         display: flex;
       }
       .text1 {
+        font-family: 'Open Sans', sans-serif ;
         padding: 20px 40px;
         font-size: 20px;
-        color: #192e6d;
+        color: #324157;
         text-align: center;
+      }
+      button {
+        border-radius: 15px;
+      }
+      .more_info_button  {
+        align-items: center;
+        text-align: center;
+      }
+      .more_info_button a  {
+        text-decoration: none;
+        color: black;
+        padding: 0 15px;
+        font-size: 15px;
+      }
+      .more_info_button:hover {
+        text-decoration: none;
+        color: inherit;
       }
       .rrangel::after {
         content: "";
         clear: both;
         display: flex;
       }
+      .fb-page {
+        margin: auto;
+      }
       @media screen and (max-width: 1000px) {
         .column {
           width: 50%;
+        }
+      }
+      @media screen and (max-width: 621px) {
+        .logo {
+          top: 0%;
+          transform: translate(0, 0);
+        }
+        .portrait {
+          margin: 0;
         }
       }
       @media screen and (max-width: 600px) {
@@ -138,9 +175,10 @@
     </style>
   </head>
   <body>
+    <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.3&appId=2284214385167064"></script> -->
     <div class="navbar" id="myScroll">
-      <a href="#header" target="_self">Inicio</a>
-      <a href="#" target="_self">Rosa R.</a>
+      <a href="#top" target="_self">Inicio</a>
+      <a href="#rosarangel" target="_self">Rosa R.</a>
       <a href="#" target="_self">Sesiones</a>
       <a href="#" target="_self">Blog</a>
       <a href="#" target="_self">Contacto</a>
@@ -149,7 +187,8 @@
       <a href="https://instagram.com/rosyrangelmovimiento?igshid=gum094ki4ba8" target="_blank" class="right"><i class="fa fa-fw fa-instagram"></i></a>
       <a href="https://m.youtube.com/channel/UCFNeaBOyTv29irjyxUhFZYg" target="_blank" class="right"><i class="fa fa-fw fa-youtube-play"></i></a>
     </div>
-    <header>
+    <header id="top">
+      <img class="header_logo" src="Images/logotipoRR03.png" alt="logotipo" style="width:400px;">
       <h1>Relajar - Respirar - Restaurar</h1>
     </header>
     <div class="row">
@@ -173,7 +212,7 @@
       </div>
     </div>
     <hr class="line1">
-    <div class="rrangel">
+    <div class="rrangel" id="rosarangel">
       <div class="head">
         <img src="Images/RR.webp" alt="Rosa Rangel" style=" height: 150px; width: auto" class="portrait">
         <img src="Images/logotipoRR02.png" alt="Logotipo" style=" height: 65px; width: auto" class="logo">
@@ -182,8 +221,20 @@
           <p>Creo firmemente en la sabiduría del cuerpo humano y en la práctica de todo movimiento consciente que apoye el camino de sanación – a todos los niveles - <br>
               Establecer el balance en nuestro sistema a través del movimiento fortalece el espíritu para fluir en la vida.</p>
         </div>
+        <div class="more_info_button">
+          <button><a href="#" target="_blank">Más información</a></button>
+        </div>
       </div>
     </div>
+    <hr class="line1">
+    <!-- <center><div class="fb-page"
+      data-tabs="timeline,messages,events"
+      data-href="https://www.facebook.com/Rosa-Rangel-Yoga-y-Movimiento-Somático-1544917479097997/"
+      data-width="500"
+      data-hide-cover="false"
+      data-show-facepile="false"
+      data-hide-cta="true"
+      data-adapt-container-width="true"></div></center> -->
     <hr class="line1">
     <footer>
       <p>Copyright (c) 2019 Copyright Holder All Rights Reserved.</p>
