@@ -6,6 +6,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Tangerine&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
     <style>
       * {
         box-sizing: border-box;
@@ -22,6 +26,7 @@
         max-height: 600px;
         height: 600px;
         margin: 0;
+        background-attachment: fixed;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -149,6 +154,9 @@
         clear: both;
         display: flex;
       }
+      .chatbot {
+        text-align: center;
+      }
       .fb-page {
         margin: auto;
       }
@@ -181,9 +189,9 @@
     <div class="navbar" id="myScroll">
       <a href="#top" target="_self">Inicio</a>
       <a href="#rosarangel" target="_self">Rosa R.</a>
-      <a href="#" target="_self">Sesiones</a>
+      <a href="#sesiones" target="_self">Sesiones</a>
       <a href="#" target="_self">Blog</a>
-      <a href="#" target="_self">Contacto</a>
+      <a href="#contact" target="_self">Contacto</a>
       <a href="#" target="_self">Eventos</a>
       <a href="https://www.facebook.com/Rosa-Rangel-Yoga-y-Movimiento-Som%C3%A1tico-1544917479097997/" target="_blank" class="right"><i class="fa fa-fw fa-facebook-square"></i></a>
       <a href="https://instagram.com/rosyrangelmovimiento?igshid=gum094ki4ba8" target="_blank" class="right"><i class="fa fa-fw fa-instagram"></i></a>
@@ -193,7 +201,7 @@
       <img class="header_logo" src="Images/logotipoRR03.png" alt="logotipo" style="width:400px;">
       <h1>Relajar - Respirar - Restaurar</h1>
     </header>
-    <div class="row">
+    <div class="row" id="sesiones">
       <div class="column">
         <img src="Images/placeholder.png" alt="Sesión personalizada de yoga restaurativa" style="width:100%">
         <div class="image_content">
@@ -229,6 +237,10 @@
       </div>
     </div>
     <hr class="line1">
+    <div class="contact" id="contact">
+      <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/14ade024-bfbf-4c0d-9b0a-8de62a59185e" class="chatbot"></iframe>
+    </div>
+    <hr class="line1">
     <!-- <center><div class="fb-page"
       data-tabs="timeline,messages,events"
       data-href="https://www.facebook.com/Rosa-Rangel-Yoga-y-Movimiento-Somático-1544917479097997/"
@@ -237,12 +249,6 @@
       data-show-facepile="false"
       data-hide-cta="true"
       data-adapt-container-width="true"></div></center> -->
-    <hr class="line1">
-<<<<<<< HEAD
-=======
-  <!-- ESTO LO AÑADIO JORGE, SE VE FEO -->
->>>>>>> 250aceb48434f48f2346c73daddc40c849ca0987
-    <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/14ade024-bfbf-4c0d-9b0a-8de62a59185e"></iframe>
     <footer>
       <p>Copyright (c) 2019 Copyright Holder All Rights Reserved.</p>
       <p>Esta página fue creada por Jorge Pérez y Luis Fernández</p>
