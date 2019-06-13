@@ -102,6 +102,8 @@
       }
       .rrangel {
         margin: 20px;
+        padding-top: 100px;
+        padding-bottom: 100px;
       }
       .head {
         overflow: auto;
@@ -145,15 +147,32 @@
       }
       .more_info_button:hover {
         text-decoration: none;
-        color: inherit;
+        color: darkred;
       }
       .rrangel::after {
         content: "";
         clear: both;
         display: flex;
       }
+      .contact {
+        margin: 0;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("Images/ocean.jpg");
+        text-align: right;
+        overflow: auto;
+      }
+      .contact_title {
+        font-size: 50px;
+        margin: 0 auto;
+        text-shadow: 3px 3px 3px #31a5a4;
+        float: left;
+        color: white;
+      }
       .chatbot {
-        text-align: center;
+        float: right;
       }
       .fb-page {
         margin: auto;
@@ -241,6 +260,7 @@
     </div>
     <hr class="line1">
     <div class="contact" id="contact">
+      <h2 class="contact_title">Contacto</h2>
       <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/14ade024-bfbf-4c0d-9b0a-8de62a59185e" class="chatbot"></iframe>
     </div>
     <hr class="line1">
