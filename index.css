@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 body {
+  box-sizing: border-box;
   height:100%;
   width:100%;
   margin: 0;
@@ -148,29 +149,27 @@ button {
   display: flex;
 }
 .contact {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  height: auto;
   margin: 0;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("Images/ocean.jpg");
-  text-align: right;
   overflow: auto;
 }
 .contact_title {
+  text-align: left;
+  margin: 20px auto;
+  margin-left: 5%;
   font-size: 50px;
-  margin: 0 auto;
-  margin-left: 50px;
-  margin-top: -70px;
   text-shadow: 3px 3px 3px #31a5a4;
-  float: left;
   color: white;
 }
 .chatbot {
-  margin-right: 50px;
-  float: right;
+  width: 30%;
+  margin-left: 65%;
+  margin-right: 5%;
 }
 .fb-page {
   margin: auto;
@@ -179,8 +178,10 @@ button {
   .column {
     width: 50%;
   }
-}
-@media screen and (max-device-width: 1000px) {
+  .chatbot {
+    width: 45%;
+    margin-left: 50%;
+  }
   .header {
     background-attachment: scroll;
   }
@@ -200,6 +201,10 @@ button {
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+  }
+  .chatbot {
+    width: 70%;
+    margin-left: 25%;
   }
 }
 #myScroll {
