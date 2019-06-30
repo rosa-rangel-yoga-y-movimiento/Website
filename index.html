@@ -10,17 +10,17 @@
     <link rel="icon" href="Images/logotipoRR04.png" type="image/png">
   </head>
   <body>
-    <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.3&appId=2284214385167064"></script> -->
     <nav class="navbar" id="myScroll">
       <a href="index.html" target="_self"><img src="Images/logotipoRR05.png" style="width: 1.0em"> Inicio</a>
-      <a href="#rosarangel" target="_self">Rosa R.</a>
-      <a href="#sesiones" target="_self">Sesiones</a>
-      <a href="#" target="_self">Blog</a>
-      <a href="#contact" target="_self">Contacto</a>
-      <a href="#" target="_self">Eventos</a>
-      <a href="https://www.facebook.com/Rosa-Rangel-Yoga-y-Movimiento-Som%C3%A1tico-1544917479097997/" target="_blank" class="right"><i class="fa fa-fw fa-facebook-square"></i></a>
-      <a href="https://instagram.com/rosyrangelmovimiento?igshid=gum094ki4ba8" target="_blank" class="right"><i class="fa fa-fw fa-instagram"></i></a>
-      <a href="https://m.youtube.com/channel/UCFNeaBOyTv29irjyxUhFZYg" target="_blank" class="right"><i class="fa fa-fw fa-youtube-play"></i></a>
+      <a href="#rosarangel" target="_self" id="rosaButton">Rosa R.</a>
+      <a href="#sesiones" target="_self" id="sesionsButton">Sesiones</a>
+      <a href="#" target="_self" id="blogButton">Blog</a>
+      <a href="#contact" target="_self" id="contactButton">Contacto</a>
+      <a href="#" target="_self" id="eventsButton">Eventos</a>
+      <a href="https://www.facebook.com/Rosa-Rangel-Yoga-y-Movimiento-Som%C3%A1tico-1544917479097997/" target="_blank" class="right"><i class="fa fa-fw fa-facebook-square"></i><p id="facebookButton"></p></a>
+      <a href="https://instagram.com/rosyrangelmovimiento?igshid=gum094ki4ba8" target="_blank" class="right"><i class="fa fa-fw fa-instagram"></i><p id="instagramButton"></p></a>
+      <a href="https://m.youtube.com/channel/UCFNeaBOyTv29irjyxUhFZYg" target="_blank" class="right"><i class="fa fa-fw fa-youtube-play"></i><p id="youtubeButton"></p></a>
+      <a href="javascript:void(0);" class="icon" onclick="navHide()"><i class="fa fa-bars"></i><a/>
     </nav>
     <header>
       <img class="header_logo" src="Images/logotipoRR03.png" alt="logotipo" style="width:400px;">
@@ -67,24 +67,32 @@
       <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/14ade024-bfbf-4c0d-9b0a-8de62a59185e" class="chatbot"></iframe>
     </div>
     <hr class="line1">
-    <!-- <center><div class="fb-page"
-      data-tabs="timeline,messages,events"
-      data-href="https://www.facebook.com/Rosa-Rangel-Yoga-y-Movimiento-Somático-1544917479097997/"
-      data-width="500"
-      data-hide-cover="false"
-      data-show-facepile="false"
-      data-hide-cta="true"
-      data-adapt-container-width="true"></div></center> -->
     <footer>
       <p>Copyright (c) 2019 Copyright Holder All Rights Reserved.</p>
       <p>Esta página fue creada por Jorge Pérez y Luis Fernández</p>
     </footer>
   </body>
   <script>
-    window.onscroll = function() {myFunction()};
+    function navHide() {
+      var x = document.getElementById("myScroll");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+        document.getElementById("rosaButton").innerHTML = "Rosa Rangel";
+        document.getElementById("facebookButton").innerHTML = "Facebook";
+        document.getElementById("instagramButton").innerHTML = "Instagram";
+        document.getElementById("youtubeButton").innerHTML  = "YouTube";
+      } else {
+        x.className = "navbar";
+        document.getElementById("rosaButton").innerHTML = "Rosa R.";
+        document.getElementById("facebookButton").innerHTML = " ";
+        document.getElementById("instagramButton").innerHTML = " ";
+        document.getElementById("youtubeButton").innerHTML  = " ";
+      }
+    }
+    window.onscroll = function() {stickyNav()};
     var header = document.getElementById("myScroll");
     var sticky = header.offsetTop;
-    function myFunction() {
+    function stickyNav() {
       if (window.pageYOffset >= sticky) {
         header.classList.add("navbar");
       } else {
