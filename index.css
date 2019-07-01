@@ -14,6 +14,7 @@ header {
   max-height: 600px;
   height: 600px;
   margin: 0;
+  /* background-color: darkred; */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -23,7 +24,6 @@ header {
 .header_logo {
   text-align: center;
   margin-top: 100px;
-  box-shadow: 2px 2px 2px white;
 }
  h1 {
   margin: 0;
@@ -35,7 +35,6 @@ header {
   text-align: center;
 }
 .navbar {
-  overflow: hidden;
   z-index: 1;
   top: 0;
   position: fixed;
@@ -221,25 +220,28 @@ button {
     display: block;
   }
   .navbar.responsive .icon {
-    right: 0;
+    text-align: center;
+    position: fixed;
     top: 0;
+    right: 0;
+    width: 10%;
+  }
+  .navbar.responsive a:first-child {
+    width: 90%;
   }
   .navbar.responsive a {
     float: none;
     display: block;
-    text-align: center;
-  }
-  .navbar a:last-child {
-    display: none;
+    text-align: left;
   }
   .navbar.responsive  #facebookButton{
-    display: block;
+    display: inline-block;
   }
   .navbar.responsive  #instagramButton{
-    display: block;
+    display: inline-block;
   }
   .navbar.responsive  #youtubeButton{
-    display: block;
+    display: inline-block;
   }
 }
 #myScroll {
