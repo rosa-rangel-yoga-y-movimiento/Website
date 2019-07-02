@@ -263,9 +263,6 @@ button {
   header {
     background-attachment: scroll;
   }
-  .contact {
-    background-attachment: scroll;
-  }
   .navbar a:not(:first-child) {
     display: none;
   }
