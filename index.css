@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 body {
   box-sizing: border-box;
@@ -80,9 +81,7 @@ h2 {
  footer {
    font-family: Helvetica;
    background: #820000;
-   padding: 20px;
   text-align: center;
-  color: white;
  }
 .column {
   position: relative;
@@ -169,8 +168,6 @@ button {
   display: flex;
   overflow: hidden;
 }
-.contact #contactVid {
-}
 .contact .contact_title {
   position: absolute;
   text-align: center;
@@ -222,6 +219,56 @@ button {
 .contenedor-testimonios q {
   font-family: Arial;
 }
+.footer {
+  width: 100%;
+  display: inline-block;
+  padding: 0;
+}
+.footer hr {
+  border: 0.5px solid lightgray;
+  margin: 10px 4%;
+  margin-top: 2.0em;
+}
+.footer h6 {
+  margin-left: 5%;
+  float: left;
+  font-weight: lighter;
+  color: lightgray;
+  font-size: 0.9em;
+  padding: 15px 0;
+}
+.footer .legal  {
+  float: left;
+  padding: 15px 20px;
+  color: gray;
+  margin: 0;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+.footer .legal.right {
+  float: right;
+}
+.footer #firstRight {
+  margin-right: 5%;
+  padding-right: 0;
+}
+.footer .legal:hover {
+text-decoration: underline;
+}
+.footer .developers::before {
+  clear: both;
+  content: "";
+  display: table;
+}
+.footer .developers {
+  color: white;
+  text-decoration: none;
+  clear: both;
+  float: none;
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0;
+}
 @media (max-width: 800px) {
   .contenedor-testimonios {
     text-align: center;
@@ -257,6 +304,17 @@ button {
   .chatbot {
     width: 70%;
     margin-left: 25%;
+  }
+}
+@media screen and (max-width: 785px) {
+  .footer h6 {
+    width: 90%;
+    text-align: left;
+  }
+  .footer a {
+    padding-top: 0;
+    padding-left: 0;
+    margin: 0 5%;
   }
 }
 @media screen and (max-width: 930px) {
