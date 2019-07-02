@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Rosa Rangel - Yoga y Movimiento Somático</title>
+    <title>Sesiones - Yoga Restaurativa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="yogarestaurativa.css">
+    <link rel="stylesheet" type="text/css" href="sesiones.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Tangerine&display=swap" rel="stylesheet">
     <link rel="icon" href="Images/logotipoRR04.png" type="image/png">
   </head>
   <body>
-    <div class="navbar" id="myScroll">
-      <a href="index.html" target="_self">Inicio</a>
-      <a href="index.html#rosarangel" target="_self">Rosa R.</a>
-      <a href="index.html#sesiones" target="_self">Sesiones</a>
-      <a href="#" target="_self">Blog</a>
-      <a href="index.html#contact" target="_self">Contacto</a>
-      <a href="#" target="_self">Eventos</a>
-      <a href="https://www.facebook.com/Rosa-Rangel-Yoga-y-Movimiento-Som%C3%A1tico-1544917479097997/" target="_blank" class="right"><i class="fa fa-fw fa-facebook-square"></i></a>
-      <a href="https://instagram.com/rosyrangelmovimiento?igshid=gum094ki4ba8" target="_blank" class="right"><i class="fa fa-fw fa-instagram"></i></a>
-      <a href="https://m.youtube.com/channel/UCFNeaBOyTv29irjyxUhFZYg" target="_blank" class="right"><i class="fa fa-fw fa-youtube-play"></i></a>
-    </div>
+    <nav class="navbar" id="myScroll">
+      <a href="index.html" target="_self"><img src="Images/logotipoRR05.png" style="width: 1.0em"> Inicio</a>
+      <a href="#" target="_self" id="rosaButton">Rosa R.</a>
+      <a href="#" target="_self" id="sesionsButton">Sesiones</a>
+      <a href="#" target="_self" id="blogButton">Blog</a>
+      <a href="#" target="_self" id="contactButton">Contacto</a>
+      <a href="#" target="_self" id="eventsButton">Eventos</a>
+      <a href="#" target="_self" id="testimonialsButton">Testimonios</a>
+      <a href="https://www.facebook.com/Rosa-Rangel-Yoga-y-Movimiento-Som%C3%A1tico-1544917479097997/" target="_blank" class="right"><i class="fa fa-fw fa-facebook-square"></i><p id="facebookButton"></p></a>
+      <a href="https://instagram.com/rosyrangelmovimiento?igshid=gum094ki4ba8" target="_blank" class="right"><i class="fa fa-fw fa-instagram"></i><p id="instagramButton"></p></a>
+      <a href="https://m.youtube.com/channel/UCFNeaBOyTv29irjyxUhFZYg" target="_blank" class="right"><i class="fa fa-fw fa-youtube-play"></i><p id="youtubeButton"></p></a>
+      <a href="javascript:void(0);" class="icon" onclick="navHide()"><i class="fa fa-bars"></i></a>
+    </nav>
   </body>
+  <script>
+    function navHide() {
+      var x = document.getElementById("myScroll");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+        document.getElementById("rosaButton").innerHTML = "Rosa Rangel";
+        document.getElementById("facebookButton").innerHTML = "Facebook";
+        document.getElementById("instagramButton").innerHTML = "Instagram";
+        document.getElementById("youtubeButton").innerHTML  = "YouTube";
+      } else {
+        x.className = "navbar";
+        document.getElementById("rosaButton").innerHTML = "Rosa R.";
+        document.getElementById("facebookButton").innerHTML = " ";
+        document.getElementById("instagramButton").innerHTML = " ";
+        document.getElementById("youtubeButton").innerHTML  = " ";
+      }
+    }
+    window.onscroll = function() {stickyNav()};
+    var header = document.getElementById("myScroll");
+    var sticky = header.offsetTop;
+    function stickyNav() {
+      if (window.pageYOffset >= sticky) {
+        header.classList.add("navbar");
+      } else {
+        header.classList.remove("navbar");
+      }
+    }
+  </script>
 </html>

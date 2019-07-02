@@ -34,6 +34,13 @@ header {
   padding: 100px 0 0 0;
   text-align: center;
 }
+h2 {
+  margin-top: 0;
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: darkred;
+}
 .navbar {
   z-index: 1;
   top: 0;
@@ -49,7 +56,7 @@ header {
   display: block;
   text-align: center;
   padding: 10px 20px;
-  font-family: 'Times New Roman';
+  font-family: Helvetica;
   text-decoration: none;
   color: white;
  }
@@ -64,10 +71,14 @@ header {
  .navbar .icon {
    display: none;
  }
+ .sesiones {
+   padding: 50px 0;
+ }
  .line1 {
    border: 1px solid darkred;
  }
  footer {
+   font-family: Helvetica;
    background: #820000;
    padding: 20px;
   text-align: center;
@@ -178,6 +189,43 @@ button {
 .fb-page {
   margin: auto;
 }
+.testimonios {
+  margin: 0 5%;
+  padding: 50px 0;
+}
+.contenedor-testimonios {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+.contenedor-testimonios::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.contenedor-testimonios img {
+  float: left;
+  margin-right: 20px;
+}
+.contenedor-testimonios span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+.contenedor-testimonios q {
+  font-family: Arial;
+}
+@media (max-width: 800px) {
+  .contenedor-testimonios {
+    text-align: center;
+  }
+  .contenedor-testimonios  img{
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
 @media screen and (max-width: 1000px) {
   .column {
     width: 50%;
@@ -205,7 +253,7 @@ button {
     margin-left: 25%;
   }
 }
-@media screen and (max-width: 795px) {
+@media screen and (max-width: 930px) {
   header {
     background-attachment: scroll;
   }
@@ -250,7 +298,4 @@ button {
 #facebookButton, #youtubeButton, #instagramButton {
   display: none;
   margin: 0;
-}
-.sesiones {
-  margin: 20px auto;
 }
