@@ -260,9 +260,6 @@ button {
   }
 }
 @media screen and (max-width: 930px) {
-  header {
-    background-attachment: scroll;
-  }
   .navbar a:not(:first-child) {
     display: none;
   }
@@ -293,6 +290,11 @@ button {
   }
   .navbar.responsive  #youtubeButton{
     display: inline-block;
+  }
+}
+@media screen and (max-width: 1050px) {
+  header {
+    background-attachment: scroll;
   }
 }
 #myScroll {
