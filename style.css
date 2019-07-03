@@ -1,0 +1,54 @@
+html{
+    font-size: 62.5%; /*Reset de REMS 100%=1px,62.5%=10px */
+    color: white;
+}
+/*Imagen*/
+body{
+    background: url(../img/fairy-tale-1180921_1920.png);
+    background-position: center start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+/*Cuerpo*/
+main{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+}
+
+/*404*/
+.notFound{
+    font-size: 18rem;
+    font-family:'Arvo', sans-serif; 
+    line-height: .7rem;
+}
+.linea-botones{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/*BOTONES*/
+.buttons{
+    display: block;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;    
+    border: .5rem solid white;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.buttons a{
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    max-width: 15 rem;
+}
+/*Link de la imagen: https://cdn.pixabay.com/photo/2016/02/05/13/11/fairy-tale-1180921_960_720.png*/
