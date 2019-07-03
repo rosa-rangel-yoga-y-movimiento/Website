@@ -4,7 +4,7 @@ html{
 }
 /*Imagen*/
 body{
-    background: url(../img/fairy-tale-1180921_1920.png);
+    background: url("Images/404.png");
     background-position: center start;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@ main{
 /*404*/
 .notFound{
     font-size: 18rem;
-    font-family:'Arvo', sans-serif; 
+    font-family:'Arvo', sans-serif;
     line-height: .7rem;
 }
 .linea-botones{
@@ -36,7 +36,7 @@ main{
     display: block;
     height: 15rem;
     width: 15rem;
-    border-radius: 50%;    
+    border-radius: 50%;
     border: .5rem solid white;
 
 
