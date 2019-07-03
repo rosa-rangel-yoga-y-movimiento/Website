@@ -75,6 +75,7 @@ h2 {
    padding: 50px 0;
  }
  .line1 {
+   margin: 5px 0;
    border: 1px solid darkred;
  }
  footer {
@@ -175,7 +176,7 @@ button {
   position: absolute;
   text-align: center;
   z-index: 1;
-  margin: 20px auto;
+  margin: 20px 0;
   margin-left: 5%;
   font-size: 50px;
   text-shadow: 3px 3px 3px #31a5a4;
