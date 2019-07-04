@@ -1,0 +1,137 @@
+.navbar {
+  z-index: 10;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  background: #333;
+}
+.navbar a {
+  font-size: 17px;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  font-family: Helvetica;
+  text-decoration: none;
+  color: white;
+ }
+ .navbar a.right {
+   float: right;
+ }
+ .navbar a:hover {
+   text-decoration: none;
+   background-color: #ddd;
+   color: darkred;
+ }
+ .navbar .icon {
+   display: none;
+ }
+ .footer {
+   width: 100%;
+   display: inline-block;
+   padding: 0;
+ }
+ .footer hr {
+   border: 0.5px solid lightgray;
+   margin: 10px 4%;
+   margin-top: 2.0em;
+ }
+ .footer h6 {
+   margin-left: 5%;
+   float: left;
+   font-weight: lighter;
+   color: lightgray;
+   font-size: 0.9em;
+   padding: 15px 0;
+ }
+ .footer .legal  {
+   float: left;
+   padding: 15px 20px;
+   color: gray;
+   margin: 0;
+   font-size: 0.9em;
+   text-decoration: none;
+ }
+ .footer .legal.right {
+   float: right;
+ }
+ .footer #firstRight {
+   margin-right: 5%;
+   padding-right: 0;
+ }
+ .footer .legal:hover {
+ text-decoration: underline;
+ }
+ .footer .developers::before {
+   clear: both;
+   content: "";
+   display: table;
+ }
+ .footer .developers {
+   color: white;
+   text-decoration: none;
+   clear: both;
+   float: none;
+   font-size: 0.8em;
+   padding: 0;
+   margin: 0;
+ }
+ @media screen and (max-width: 1168px) {
+   .footer h6 {
+     width: 90%;
+     text-align: left;
+   }
+   .footer a {
+     padding-top: 0;
+     padding-left: 0;
+     margin: 0 5%;
+   }
+ }
+ @media screen and (max-width: 930px) {
+   .navbar a:not(:first-child) {
+     display: none;
+   }
+   .navbar a.icon {
+     float: right;
+     display: block;
+   }
+   .navbar.responsive .icon {
+     text-align: center;
+     position: fixed;
+     top: 0;
+     right: 0;
+     width: 10%;
+   }
+   .navbar.responsive a:first-child {
+     width: 90%;
+   }
+   .navbar.responsive a {
+     float: none;
+     display: block;
+     text-align: left;
+   }
+   .navbar.responsive  #facebookButton{
+     display: inline-block;
+   }
+   .navbar.responsive  #instagramButton{
+     display: inline-block;
+   }
+   .navbar.responsive  #youtubeButton{
+     display: inline-block;
+   }
+ }
+ @media screen and (max-width: 750px) {
+   .legal.faq {
+     width: 60%;
+     text-align: left;
+   }
+ }
+ #myScroll {
+   overflow: hidden;
+ }
+ #facebookButton, #youtubeButton, #instagramButton {
+   display: none;
+   margin: 0;
+ }
