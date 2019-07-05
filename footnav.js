@@ -15,9 +15,9 @@ function navHide() {
   }
 }
 window.onscroll = function() {stickyNav()};
-var header = document.getElementById("myScroll");
-var sticky = header.offsetTop;
 function stickyNav() {
+  var header = document.getElementById("myScroll");
+  var sticky = header.offsetTop;
   if (window.pageYOffset >= sticky) {
     header.classList.add("navbar");
   } else {
