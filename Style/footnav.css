@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 .navbar {
   z-index: 10;
   top: 0;
@@ -29,6 +32,9 @@
    display: none;
  }
  .footer {
+   font-family: Helvetica;
+   background: #07011c;
+   text-align: center;
    width: 100%;
    display: inline-block;
    padding: 0;

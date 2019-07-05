@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  box-sizing: border-box;
+  height:100%;
+  width:100%;
+  margin: 0;
+  background-color: #ffffff;
+}
+hr {
+  margin: 5px 0;
+  border: 1px solid #07011c;
+}
+h2 {
+  margin-top: 0;
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: #07011c;
+}
+a {
+  color: #07011c;
+  text-decoration: none;
+}
+a:hover {
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+}
+.header {
+  height: 500px;
+  background-image: url("../Images/YogaResta.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ .prev, .next {
+  font-size: 50px;
+  top: 40%;
+  position: absolute;
+  padding-bottom: 5px;
+  user-select: none;
+  transition: 0.6s ease;
+}
+.prev {
+  left: 0;
+  padding-right: 10px;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  padding-right: 10px;
+  border-radius: 3px 0 0 3px;
+}
+.session-description {
+  padding: 50px 0;
+  margin: 0 5%;
+}

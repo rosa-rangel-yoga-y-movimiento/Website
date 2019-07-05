@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  margin: 0;
 }
 body {
   box-sizing: border-box;
@@ -59,11 +58,6 @@ h2 {
  .line1 {
    margin: 5px 0;
    border: 1px solid #07011c;
- }
- footer {
-   font-family: Helvetica;
-   background: #07011c;
-  text-align: center;
  }
 .column {
   position: relative;
