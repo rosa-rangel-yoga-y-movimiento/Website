@@ -51,18 +51,18 @@ h2 {
   text-align: center;
   font-family: Helvetica;
   font-weight: bold;
-  color: darkred;
+  color: #07011c;
 }
  .sesiones {
    padding: 50px 0;
  }
  .line1 {
    margin: 5px 0;
-   border: 1px solid darkred;
+   border: 1px solid #07011c;
  }
  footer {
    font-family: Helvetica;
-   background: #820000;
+   background: #07011c;
   text-align: center;
  }
 .column {
