@@ -1,4 +1,4 @@
-var sessionIndex = 1;
+var sessionIndex = localStorage.getItem("index");
 
 function plusSession(n) {
   showSession(sessionIndex += n);
