@@ -133,9 +133,9 @@
      width: 60%;
      text-align: left;
    }
-   @media screen and (max-sidth: 650px) {
+   @media screen and (max-sidth: 600px) {
      .legal.faq {
-       width: 50%;
+       width: 40%;
        text-align: left;
      }
    }
