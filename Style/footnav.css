@@ -133,6 +133,12 @@
      width: 60%;
      text-align: left;
    }
+   @media screen and (max-sidth: 650px) {
+     .legal.faq {
+       width: 50%;
+       text-align: left;
+     }
+   }
  }
  #myScroll {
    overflow: hidden;
