@@ -133,7 +133,7 @@
      width: 60%;
      text-align: left;
    }
-   @media screen and (max-sidth: 600px) {
+   @media screen and (max-sidth: 700px) {
      .legal.faq {
        width: 20%;
        text-align: left;
