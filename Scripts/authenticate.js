@@ -18,7 +18,11 @@ function signIn(mail, password) {
     firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL).then(function() {
     return firebase.auth().signInWithEmailAndPassword(mail, password);
   }).catch(function(error) {alert(error)});
-    window.location.replace('formulario_eventos.html');
+  firebase.auth().onAuthStateChanged(function(user){
+    if(user){
+      window.location = "formulario_eventos.html";
+    }
+  })
   }). catch(function(error) {alert(error)});
 }
 
