@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Autenticación de Usuario</title>
+  </head>
+  <body>
+    <!-- Firebase Scripts-->
+    <script defer src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/6.3.3/firebase-storage.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/6.3.3/firebase-database.js"></script>
+    <script defer src="Scripts/init-firebase.js"></script>
+    <!-- End Scripts-->
+    <form class="loginForm" id="logForm">
+      <input type="email" name="mail" id="mail" placeholder="Mail">
+      <input type="password" name="password" id="password" placeholder="Contraseña">
+      <button type="submit" name="button" id="button">Ingresar</button>
+    </form>
+    <script type="text/javascript" src="Scripts/authenticate.js"></script>
+  </body>
+</html>
