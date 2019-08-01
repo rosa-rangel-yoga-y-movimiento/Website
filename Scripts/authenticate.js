@@ -14,16 +14,9 @@ function getInputValues(id) {
 function signIn(mail, password) {
   firebase.auth().signInWithEmailAndPassword(mail, password).then(function(){
     alert("Inicio de sesión exitoso");
+    checkAuthStatus();
     document.getElementById('button').disabled = true;
-    firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL).then(function() {
-    return firebase.auth().signInWithEmailAndPassword(mail, password);
-  }).catch(function(error) {alert(error)});
-  firebase.auth().onAuthStateChanged(function(user){
-    if(user){
-      window.location = "formulario_eventos.html";
-    }
-  })
-  }). catch(function(error) {alert(error)});
+    }).catch(function(error) {alert(error)});
 }
 
 window.onload = function() {
@@ -31,11 +24,13 @@ window.onload = function() {
 }
 
 function checkAuthStatus() {
-  var user = firebase.auth().currentUser;
-  if (user) {
-    window.location.replace('formulario_eventos.html');
-  console.log("si");
-  } else {
-    console.log("no");
-  }
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      alert("Bienvenida de nuevo, Rosa")
+      console.log(user);
+      window.location = "formulario_eventos.html"
+    } else {
+      console.log("no");
+    }
+  });
 }

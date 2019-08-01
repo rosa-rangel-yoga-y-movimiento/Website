@@ -12,6 +12,29 @@
     <script defer src="https://www.gstatic.com/firebasejs/6.3.3/firebase-database.js"></script>
     <script defer src="Scripts/init-firebase.js"></script>
     <!-- End Scripts-->
+    <form class="eventsForm" id="form">
+      Día: <input type="date" id="dia">
+      <br>
+      Hora: <input type="time" value="10:00" id="hora">
+      <br>
+      Tipo de sesión: <input type="text" id="clase">
+      <br>
+      Lugar: <input type="text" id="lugar">
+      <br>
+      Costo: $<input type="number" value="200" id="costo">
+      <br>
+      Anfitrion(es): <input type="text" value="Rosa Rangel" id="anfitrion">
+      <br>
+      Duración: <input type="number" value="2" id="duracion"> horas
+      <br>
+      Cuenta: <input type="number" value="" id="cuenta">
+      <br>
+      Estacionamiento: <input type="checkbox" id="estacionamiento" value="0">
+      <br>
+      Imágen: <input type="image" id="imagen">
+      <br>
+      <button type="submit" id="submit">Crear Evento</button>
+    </form>
     <script type="text/javascript" src="Scripts/formularioEventos.js"></script>
   </body>
 </html>
