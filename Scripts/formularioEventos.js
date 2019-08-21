@@ -27,7 +27,8 @@ function crearEvento(e) {
   var cuenta = getInputValues('cuenta');
   var estacionamiento = document.getElementById('estacionamiento').checked;
   var imagen = getInputValues('imagen');
-  var eventData = {
+  var newEventKey = db.ref().child('eventos').push().key;
+  db.ref('eventos/' + newEventKey).set({
     date: dia,
     time: hora,
     class: clase,
@@ -38,9 +39,7 @@ function crearEvento(e) {
     account: cuenta,
     parking: estacionamiento,
     image: imagen
-  }
-  var newEventKey = db.ref().child('eventos').push().key;
-  db.ref('eventos/' + newEventKey).set({eventData})
+  })
   alert("Evento creado exitosamente!")
 }
 
