@@ -29,8 +29,19 @@ h2 {
    color: white;
    cursor: pointer;
    float: right;
-   margin-top: 350px;
+   margin-top: -50px;
    margin-right: 5px;
    font-size: 20px;
    border-radius: 50%;
+ }
+ .eventInfo {
+   margin: 0 10%;
+   padding: 0 10%;
+   height: 100%;
+   background-color: rgba(204,54,121,0.8);
+   color: #68182D;
+ }
+ .eventInfo h1 {
+   text-align: center;
+   padding-top: 50px;
  }
