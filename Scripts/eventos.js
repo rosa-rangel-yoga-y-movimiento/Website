@@ -27,5 +27,26 @@ function changeEventVal() {
   document.getElementById('anfitrion').innerHTML = "Anfitrion(es): " + eventArray[0].host;
   document.getElementById('duracion').innerHTML = "Duración: " + eventArray[0].duration;
   document.getElementById('cuenta').innerHTML = "Cuenta: " + eventArray[0].account;
-  document.getElementById('estacionamiento').innerHTML = "Estacionamiento: " + eventArray[0].parking;
+  if (eventArray[0].parking) {
+    document.getElementById('estacionamiento').innerHTML = "Estacionamiento:  Sí";
+  } else {
+    document.getElementById('estacionamiento').innerHTML = "Estacionamiento: No";
+  }
+}
+var disp = document.getElementsByClassName("display");
+for (var i = 0; i < disp.length; i++) {
+  disp[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var display_pane = this.nextElementSibling;
+    if (display_pane.style.display === "block")  {
+      display_pane.style.display = "none";
+    } else {
+      display_pane.style.display = "block";
+    }
+    if (display_pane.style.maxHeight){
+      display_pane.style.maxHeight = null;
+    } else {
+      display_pane.style.maxHeight = display_pane.scrollHeight + "px";
+    }
+  });
 }

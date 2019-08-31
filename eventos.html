@@ -31,19 +31,46 @@
       <a href="https://m.youtube.com/channel/UCFNeaBOyTv29irjyxUhFZYg" target="_blank" class="right"><i class="fa fa-fw fa-youtube-play"></i><p id="youtubeButton"></p></a>
       <a href="javascript:void(0);" class="icon" onclick="navHide()"><i class="fa fa-bars"></i></a>
     </nav>
-    <div class="file" style="height:600px">
+    <div class="file">
       <div class="eventInfo">
         <h1>Eventos</h1>
-        <p id="dia">Día: </p>
-        <p id="hora">Hora: </p>
-        <p id="clase">Tipo de sesión: </p>
-        <p id="lugar">Lugar: </p>
-        <p id="costo">Costo: $</p>
-        <p id="anfitrion">Anfitrion(es): </p>
-        <p id="duracion">Duración: </p>
-        <p id="cuenta">Cuenta: </p>
-        <p id="estacionamiento">Estacionamiento: </p>
-        <!-- <img src="" alt=""> -->
+        <button class="display">¿Qué día es el evento?</button>
+        <div class="display_pane">
+          <p id="dia"></p>
+        </div>
+        <button  class="display">¿A qué hora es el evento?</button>
+        <div class="display_pane">
+          <p id="hora"></p>
+        </div>
+        <button  class="display">¿Qué tipo de sesión es?</button>
+        <div class="display_pane">
+          <p id="clase"></p>
+        </div>
+        <button  class="display">¿En dónde es el evento?</button>
+        <div class="display_pane">
+          <p id="lugar"></p>
+        </div>
+        <button  class="display">¿Cuál es el costo del evento?</button>
+        <div class="display_pane">
+          <p id="costo"></p>
+        </div>
+        <button  class="display">¿Quién es el anfitrión del evento?</button>
+        <div class="display_pane">
+          <p id="anfitrion"></p>
+        </div>
+        <button  class="display">¿Cuál es la duración del evento?</button>
+        <div class="display_pane">
+          <p id="duracion"></p>
+        </div>
+        <button  class="display">¿Cuál es la cuenta del evento?</button>
+        <div class="display_pane">
+          <p id="cuenta"></p>
+        </div>
+        <button  class="display">¿Hay lugar para estacionarse?</button>
+        <div class="display_pane">
+          <p id="estacionamiento"></p>
+        </div>
+        <img src="Images/placeholder.png" alt="place" id="imagenEvento" class="imagen">
       </div>
       <a href="authentication.html" type="button" name="formularioEventos" class="addEvent" href="formularioEventos.html">+</a>
     </div>

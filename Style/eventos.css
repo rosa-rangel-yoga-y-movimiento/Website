@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 body {
+  font-family: Helvetica;
   box-sizing: border-box;
   height:100%;
   width:100%;
@@ -44,4 +45,43 @@ h2 {
  .eventInfo h1 {
    text-align: center;
    padding-top: 50px;
+ }
+ .display {
+   font-size: 20px;
+   background-color: #fff;
+   color: #68182D;
+   cursor: pointer;
+   padding: 18px;
+   width: 100%;
+   text-align: left;
+   border: none;
+   outline: none;
+   transition: 0.4s;
+   margin: 2px 0;
+ }
+ .active, .display:hover {
+   background-color: #aaa;
+ }
+ .display_pane {
+   padding: 10px 18px;
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.2s ease-out;
+   display: none;
+ }
+ .display::after {
+   content: "+";
+   font-size: 20px;
+   color: #777;
+   float: right;
+   margin-left: 5px;
+ }
+ .active::after {
+   content: "-";
+ }
+ .imagen {
+   border-radius: 5%;
+   width: 100%;
+   margin: 10px auto 0;
+   align-self: center;
  }
