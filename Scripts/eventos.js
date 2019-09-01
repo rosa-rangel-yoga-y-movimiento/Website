@@ -19,15 +19,15 @@ function databaseConnection(callback) {
 }
 
 function changeEventVal() {
-  document.getElementById('dia').innerHTML = "Día: " + eventArray[0].date;
-  document.getElementById('hora').innerHTML = "Hora: " + eventArray[0].time;
-  document.getElementById('clase').innerHTML = "Tipo de sesión: " + eventArray[0].class;
-  document.getElementById('lugar').innerHTML = "Lugar: " + eventArray[0].place;
-  document.getElementById('costo').innerHTML = "Costo: " + eventArray[0].cost;
-  document.getElementById('anfitrion').innerHTML = "Anfitrion(es): " + eventArray[0].host;
-  document.getElementById('duracion').innerHTML = "Duración: " + eventArray[0].duration;
-  document.getElementById('cuenta').innerHTML = "Cuenta: " + eventArray[0].account;
-  if (eventArray[0].parking) {
+  document.getElementById('dia').innerHTML = "El día del evento es el " + eventArray[eventArray.length-1].date + ", ¡te esperamos!";
+  document.getElementById('hora').innerHTML = "Hora: " + eventArray[eventArray.length-1].time;
+  document.getElementById('clase').innerHTML = "Tipo de sesión: " + eventArray[eventArray.length-1].class;
+  document.getElementById('lugar').innerHTML = "Lugar: " + eventArray[eventArray.length-1].place;
+  document.getElementById('costo').innerHTML = "Costo: " + eventArray[eventArray.length-1].cost;
+  document.getElementById('anfitrion').innerHTML = "Anfitrion(es): " + eventArray[eventArray.length-1].host;
+  document.getElementById('duracion').innerHTML = "Duración: " + eventArray[eventArray.length-1].duration;
+  document.getElementById('cuenta').innerHTML = "Cuenta: " + eventArray[eventArray.length-1].account;
+  if (eventArray[eventArray.length-1].parking) {
     document.getElementById('estacionamiento').innerHTML = "Estacionamiento:  Sí";
   } else {
     document.getElementById('estacionamiento').innerHTML = "Estacionamiento: No";
@@ -50,3 +50,4 @@ for (var i = 0; i < disp.length; i++) {
     }
   });
 }
+document.getElementById("vid").playbackRate = .5;
