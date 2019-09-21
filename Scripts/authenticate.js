@@ -28,7 +28,7 @@ function checkAuthStatus() {
     if (user) {
       alert("Bienvenida de nuevo, Rosa")
       console.log(user);
-      window.location = "formulario_eventos.html"
+      window.location = "formulario_eventos.html";
     } else {
       console.log("no");
     }
