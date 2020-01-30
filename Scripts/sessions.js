@@ -46,6 +46,7 @@ function showSession(n) {
     console.log("3 p");
     document.title = "Sesiones - Taller de Respiración";
     session.style.backgroundImage = "url('Images/Respirar.jpg')";
+    session.style.backgroundPosition  = "left";
     sessionTitle.innerHTML = "Taller de Respiración";
     sessionDescription.innerHTML = "Sesión de una hora para desarrollar la consciencia respiratoria. Entras en contacto con tu respiración para descubrir y transformar  los hábitos respiratorios que no son funcionales y que te alejan de la salud física y mental. Explorarás  tu territorio corporal para conectar con el flujo energético de tu respiración.<br>Genera estado de tranquilidad, apoya el manejo de la ansiedad y permite que tu cuerpo descanse a través de la consciencia respiratoria.<br>Cuando atiendes tu respiración, la mente y el cuerpo se calman liberando la tensión.<br>Ideal para personas que llevan algún tratamiento médico, están en terapia psicológica o están en ansiedad. Esta sesión es una forma de acompañarse para conocerse mejor y lograr procesos de salud exitosos.";
     sessionsBenefits.innerHTML = "";

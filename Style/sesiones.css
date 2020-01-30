@@ -16,8 +16,11 @@ a {
   color: #07011c;
   text-decoration: none;
 }
+h3 {
+  color: #09154B;
+}
 .header {
-  height: 500px;
+  height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,7 +50,7 @@ a {
   text-align: center;
   font-family: Helvetica;
   font-weight: bold;
-  color: #07011c;
+  color: #09154B;
 }
 .session-description {
   padding: 50px 0;
