@@ -33,8 +33,7 @@ h1 {
   align-items: space-around;
 }
 #blog-thumbnails a {
-  pointer-events: auto !important;
-  cursor: pointer !important;
+  z-index: 5;
 }
 .modal-blog {
   position: fixed;
