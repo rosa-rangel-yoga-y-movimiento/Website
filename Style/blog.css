@@ -32,8 +32,8 @@ h1 {
   align-items: center;
   align-items: space-around;
 }
-#blog-thumbnails a {
-  z-index: 5;
+img {
+  z-index: -1;
 }
 .modal-blog {
   position: fixed;
