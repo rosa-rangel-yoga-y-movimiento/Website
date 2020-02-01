@@ -32,9 +32,6 @@ h1 {
   align-items: center;
   align-items: space-around;
 }
-#blog-thumbnails a:hover {
-  transform: scale(1.02);
-}
 img {
   z-index: -1;
 }
