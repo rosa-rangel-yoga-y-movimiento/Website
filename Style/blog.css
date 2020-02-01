@@ -40,7 +40,7 @@ h1 {
 	bottom: 0;
 	left: 0;
 	background: rgba(0,0,0,0.8);
-	z-index: 99999;
+	z-index: 9999;
 	opacity:0;
 	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
@@ -63,6 +63,7 @@ h1 {
 	background: -o-linear-gradient(#fff, #999);
 }
 .close {
+  z-index: 99999;
   background: #606061;
 	color: #FFFFFF;
 	line-height: 25px;
