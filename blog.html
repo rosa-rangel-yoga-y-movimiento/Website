@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title></title>
+    <title>Blog - Yoga y Movimiento Somático</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="Style/sesiones.css">
+    <link rel="stylesheet" type="text/css" href="Style/blog.css">
     <link rel="stylesheet" type="text/css" href="Style/footnav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Tangerine&display=swap" rel="stylesheet">
     <link rel="icon" href="Images/Logos/logotipoRR04.png" type="image/png">
     <script type="text/javascript" src="Scripts/footnav.js"></script>
-    <script type="text/javascript" src="Scripts/sessions.js"></script>
   </head>
   <body>
+    <!-- Firebase Scripts-->
+    <script defer src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/6.3.3/firebase-storage.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/6.3.3/firebase-database.js"></script>
+    <script defer src="Scripts/init-firebase.js"></script>
+    <!-- End Scripts-->
     <nav class="navbar" id="myScroll">
       <a href="/Website/" target="_self"><img src="Images/Logos/logotipoRR05.png" style="width: 1.0em"> Inicio</a>
-      <a href="/Website/#rosarangel" target="_self" id="rosaButton">Rosa R.</a>
-      <a href="/Website/#sesiones_y_talleres" target="_self" id="sesionsButton">Sesiones</a>
-      <a href="/Website/#testimonios" target="_self" id="testimonialsButton">Testimonios</a>
+      <a href="#rosarangel" target="_self" id="rosaButton">Rosa R.</a>
+      <a href="#sesiones_y_talleres" target="_self" id="sesionsButton">Sesiones</a>
+      <a href="#testimonios" target="_self" id="testimonialsButton">Testimonios</a>
       <a href="blog" target="_self" id="blogButton">Blog</a>
       <a href="eventos" target="_self" id="eventsButton">Evento del mes</a>
-      <a href="/Website/#contact" target="_self" id="contactButton">Contacto</a>
+      <a href="#contact" target="_self" id="contactButton">Contacto</a>
       <a href="https://www.facebook.com/Rosa-Rangel-Yoga-y-Movimiento-Som%C3%A1tico-1544917479097997/" target="_blank" class="right"><i class="fa fa-fw fa-facebook-square"></i><p id="facebookButton"></p></a>
       <a href="https://instagram.com/rosyrangelmovimiento?igshid=gum094ki4ba8" target="_blank" class="right"><i class="fa fa-fw fa-instagram"></i><p id="instagramButton"></p></a>
       <a href="https://m.youtube.com/channel/UCFNeaBOyTv29irjyxUhFZYg" target="_blank" class="right"><i class="fa fa-fw fa-youtube-play"></i><p id="youtubeButton"></p></a>
       <a href="javascript:void(0);" class="icon" onclick="navHide()"><i class="fa fa-bars"></i></a>
     </nav>
-    <header class="header" id="headerImg">
-      <div class="botonesNavSesiones">
-        <a href="javascript:void(0);"  onclick="plusSession(-1)"class="prev">&laquo;</a>
-        <a href="javascript:void(0);"  onclick="plusSession(1)" class="next">&raquo;</a>
-      </div>
+    <header class="header">
+      <h1>Blog</h1>
     </header>
-    <hr>
-    <div class="session-description">
-      <h2 class="section-title" id="sessionTitle">Título</h2>
-      <p id="sessionDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <h3 class="benefits">Beneficios:</h3>
-      <ul id="benefitsList">
-      </ul>
-    </div>
-    <hr>
-    <!-- <div class="session-events">
-      <object type="application/pdf"data="Test.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&view=Fit" class="upcoming-events" height="776px">
-      </object>
-    </div>
-    <hr> -->
+    <main id="blog">
+      <section id="blog-thumbnails">
+       <a href="#test-modal">
+         <div class="thumbnail">
+           <img src="Images/placeholder.png" alt="">
+         </div>
+        </a>
+      </section>
+      <section id="blog-modals">
+        <div id="test-modal" class="modal-blog">
+          <a href="" title="Close" class="close">X</a>
+          <object type="application/pdf" data="Blog/Test.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=115&messages=0&statusbar=0&View=FitBH" width="50%" height="100%" class="pdf">
+          </object>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <hr>
       <h6>Copyright © 2019 Rosa Rangel. All Rights Reserved.</h6>
