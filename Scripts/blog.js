@@ -56,8 +56,6 @@ function loadThumbnail() {
     var pdf = document.createElement("object");
     pdf.type = "application/pdf";
     pdf.data = blogArray[i].blog + "#toolbar=0&navpanes=0&scrollbar=0&messages=0&statusbar=0&View=FitBH";
-    pdf.width = "50%";
-    pdf.height = "100%";
     pdf.className = "pdf";
     divi.appendChild(pdf);
     modal_sec.appendChild(divi);
