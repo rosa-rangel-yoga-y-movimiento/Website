@@ -209,6 +209,11 @@ button {
     display: block;
   }
 }
+@media screen and (max-width: 425px) {
+  .header-title {
+    font-size: 30px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .column {
     width: 49%;
