@@ -25,16 +25,38 @@ h1 {
   line-height: 60vh;
 }
 #blog-thumbnails {
-  margin: 0 0 20px;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
-  align-items: space-around;
+  align-items: space-evenly;
   z-index: -10;
+}
+#blog-thumbnails a {
+  width: 23.75%;
+  text-decoration: none;
+  color: #000000;
+  background-color: #DFDFDF;
+  border-radius: 5px;
+  margin: 0 0 20px 1%;
 }
 .thumbnail {
   z-index: 1;
+}
+.thumbnail h2, h3 {
+  font-family: Arial;
+  width: 90%;
+  margin: 0 5% 5%;
+}
+.thumbnail h3 {
+  color: #333333;
+  text-shadow: 1px 1px #FFFFFF;
+}
+.thumbnail img {
+  min-height: 180px;
+  width: 90%;
+  margin: 5% 5%;
 }
 .modal-blog {
   position: fixed;
@@ -51,7 +73,7 @@ h1 {
 	transition: opacity 400ms ease-in;
 	pointer-events: none;
 }
-.modal-blog:target {
+.modal-blog:target, .selected {
   opacity: 1;
   pointer-events: auto;
   cursor: default;
