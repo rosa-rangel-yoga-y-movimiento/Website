@@ -57,6 +57,10 @@ function loadThumbnail() {
     pdf.type = "application/pdf";
     pdf.data = blogArray[i].blog + "#toolbar=0&navpanes=0&scrollbar=0&messages=0&statusbar=0&View=FitBH";
     pdf.className = "pdf";
+    var android_fallback = document.createElement("embed");
+    android_fallback.type = "application/pdf";
+    android_fallback.src = blogArray[i].blog;
+    pdf.appendChild(android_fallback);
     divi.appendChild(pdf);
     modal_sec.appendChild(divi);
     var url = window.location.href.split("#");
