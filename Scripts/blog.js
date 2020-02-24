@@ -8,22 +8,22 @@ window.onload = function() {
 }
 
 function databaseConnection(callback) {
-  var ref = firebase.database().ref().child('/blogs/');
+  var ref = firebase.database().ref('blogs/');
   ref.once('value', function(snapshot) {
     var i = 0;
     snapshot.forEach(function(post) {
       var postVal = post.val();
       blogArray[i] = postVal;
       i += 1;
-      console.log(i);
-      callback();
+      console.log(blogArray);
     });
+    callback();
   });
 }
 
 function loadPosts() {
   var thumbnail_sec = document.getElementById('blog-thumbnails');
-  for (var i = 0; i < blogArray.length-1; i++) {
+  for (var i = 0; i < blogArray.length; i++) {
     var anchor = document.createElement("a");
     anchor.href = "#" + blogArray[i].id;
     var divi = document.createElement("div");
