@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 80%;
+  margin: 50px 10%;
+  padding: 20px;
+  background-color: #32a0a8;
+}
+
+input {
+  width: 100%;
+}
+button {
+  margin: 20px 40%;
+  width: 20%;
+  background-color: #beeda6;
+  color: #32a0a8;
+  font-size: 20px;
+  padding: 20px 0;
+  border-radius: 12px;
+}
+button:hover {
+  cursor: pointer;
+}

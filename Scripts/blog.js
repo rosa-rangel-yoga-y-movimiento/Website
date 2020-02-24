@@ -15,6 +15,7 @@ function databaseConnection(callback) {
       var postVal = post.val();
       blogArray[i] = postVal;
       i += 1;
+      console.log(i);
       callback();
     });
   });
@@ -22,7 +23,7 @@ function databaseConnection(callback) {
 
 function loadPosts() {
   var thumbnail_sec = document.getElementById('blog-thumbnails');
-  for (var i = 0; i < blogArray.length; i++) {
+  for (var i = 0; i < blogArray.length-1; i++) {
     var anchor = document.createElement("a");
     anchor.href = "#" + blogArray[i].id;
     var divi = document.createElement("div");
@@ -43,7 +44,7 @@ function loadPosts() {
 
 function loadThumbnail() {
   var modal_sec = document.getElementById('blog-modals');
-  for (var i = 0; i < blogArray.length; i++) {
+  for (var i = 0; i < blogArray.length-1; i++) {
     var divi = document.createElement("div");
     divi.className = "modal-blog";
     divi.id = blogArray[i].id;
@@ -57,9 +58,6 @@ function loadThumbnail() {
     pdf.type = "application/pdf";
     pdf.data = blogArray[i].blog + "#toolbar=0&navpanes=0&scrollbar=0&messages=0&statusbar=0&View=FitBH";
     pdf.className = "pdf";
-    if(navigator.userAgent.match(/Android/i)) {
-      window.open(blogArray[i].blog);
-    }
     // var android_fallback = document.createElement("embed");
     // android_fallback.type = "application/pdf";
     // android_fallback.src = blogArray[i].blog;
@@ -69,6 +67,9 @@ function loadThumbnail() {
     var url = window.location.href.split("#");
     var last = url.pop();
     if (last == blogArray[i].id) {
+      if(navigator.userAgent.match(/Android/i)) {
+        window.open(blogArray[i].blog);
+      }
       console.log("xx");
       var selectedPost = document.getElementById(blogArray[i].id);
       selectedPost.className += " selected"

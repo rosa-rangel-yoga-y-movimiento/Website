@@ -39,7 +39,7 @@ function crearEvento(e) {
     account: cuenta,
     parking: estacionamiento,
     image: imagen
-  })
+  });
   alert("Evento creado exitosamente!")
 }
 
