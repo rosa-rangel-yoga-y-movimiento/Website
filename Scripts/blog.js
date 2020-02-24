@@ -44,7 +44,7 @@ function loadPosts() {
 
 function loadThumbnail() {
   var modal_sec = document.getElementById('blog-modals');
-  for (var i = 0; i < blogArray.length-1; i++) {
+  for (var i = 0; i < blogArray.length; i++) {
     var divi = document.createElement("div");
     divi.className = "modal-blog";
     divi.id = blogArray[i].id;
